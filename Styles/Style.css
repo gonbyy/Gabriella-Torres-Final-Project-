@@ -43,6 +43,19 @@ header {
     gap: 20px;
     padding: 40px;
 }
+.text {
+    flex: 1;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
 
 /* =========================
    NAVIGATION
