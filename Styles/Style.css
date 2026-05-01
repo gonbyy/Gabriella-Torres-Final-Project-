@@ -1,88 +1,138 @@
-/* Style sheet created by: Gabriella Torres, May 1, 2026 */
+/* Style sheet created by: Gabriella Torres, May 1,2025*/
 
-/* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul {
+* {
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
 
-/* Style rule for body and images */
 body {
-	background-color: #cfe2cf;
-}
-img {
-	max-width: 100%;
-	display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f4f4f4;
 }
 
-/* Style rules for mobile viewport */
+/* =========================
+   TYPOGRAPHY
+========================= */
 
-/* Style rule to hide tablet-desk class */
-	.tablet-desk {
-		display: none;
-	}
-/* Style rule for header */
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
 header {
-	font-family: Verdana, Arial, sans-serif;
-	text-align: center;
-    padding: 3%;
-    color: #092834;
-    margin-top: 5%;
-}
-
-/* Style rules for nav */
-nav {
-	padding: 1%;
-    margin-bottom: 1%;
-    background-color: #FFCCFF;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-}
-
-nav ul {
+    background-color: #222;
+    color: white;
     text-align: center;
-	list-style-type: none;
+    padding: 25px 15px;
 }
 
-nav li {
-    font-size: 1.5em;
-    padding: 4%;
-	display: inline-block;
-	font-family: 'B612', sans-serif;
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
 }
 
-nav li a {
-    display: block;
-    color: #223300;
+nav a {
+    color: white;
     text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    display: inline-block;
 }
 
-/* Style rules for main content  */
+nav a:hover {
+    color: #ffb6c1;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
 main {
-	display: block;
-	margin: 1% 1% 15%;
-	padding: 1%;
-    font-size: 1.5em;
-	font-family: 'Crimson Text', serif;
-}
-.corner {
-	border-radius: 12px;
-}
-	
-#image {
-    margin-bottom: 1%;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
 }
 
-/* Style rule for footer */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
 footer {
-	font-size: .70em;
-	text-align: center;
-	margin-top: 2em;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
 }
 
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
 
+/* Tablet */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 
+    main {
+        width: 95%;
+    }
 
+    section {
+        padding: 15px;
+    }
+}
 
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
