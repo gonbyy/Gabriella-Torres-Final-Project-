@@ -36,6 +36,14 @@ header {
     padding: 25px 15px;
 }
 
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+}
+
 /* =========================
    NAVIGATION
 ========================= */
